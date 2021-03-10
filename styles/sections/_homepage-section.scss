@@ -1,0 +1,27 @@
+section.homepage-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100vw;
+    height: 100vh;
+    .homepage-section__content {
+        width: 100%;
+        margin-top: -200px;
+    }
+}
+@include media-breakpoint-up(md) {
+    section.homepage-section {
+    
+    }
+}
+@include media-breakpoint-up(lg) {
+    section.homepage-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}

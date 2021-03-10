@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Layout from \"../components/Layout\";\nimport HomePage from \"../components/HomePage\";\n\nvar Home = function Home() {\n  return /*#__PURE__*/_jsx(Layout, {\n    content: /*#__PURE__*/_jsx(HomePage, {})\n  });\n};\n\nexport { Home as default };","map":null,"metadata":{},"sourceType":"module"}
