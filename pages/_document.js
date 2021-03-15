@@ -8,9 +8,8 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang="en">
                 <Head>
-                    <meta charset="UTF-8" />
                     <meta name="description"
                         content="Personal portfolio website of London based Front End Engineer and designer Niall McKenna." />
                     <meta name="Keywords"

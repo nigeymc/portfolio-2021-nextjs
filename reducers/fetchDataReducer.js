@@ -12,13 +12,6 @@ const homepageInitialState = {
 
 const homepageReducer = (state = homepageInitialState, action) => {
   switch (action.type) {
-    // case "FETCH_DATA_LOADING":
-    //   return {
-    //     ...state,
-    //     error: null,
-    //     loading: action.payload,
-    //   };
-
     case "FETCH_DATA_SUCCESS":
       return {
         ...state,
