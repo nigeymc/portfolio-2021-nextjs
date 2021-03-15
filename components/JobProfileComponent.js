@@ -1,5 +1,3 @@
-import React from 'react';
-
 const JobProfileComponent = (props) => (
     <div className="job">
         <h4><img src="/images/briefcase.svg" width="25" alt="briefcase icon" /> {/*<i className="fas fa-briefcase"></i> */} · {props.jobTitle}</h4>

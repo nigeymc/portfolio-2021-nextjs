@@ -3,6 +3,5 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/my-experience": "pages/my-experience.js",
-  "/contact-me": "pages/contact-me.js",
-  "/my-projects": "pages/my-projects.js"
+  "/my-skills": "pages/my-skills.js"
 }

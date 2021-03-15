@@ -24,20 +24,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/contact-me": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/contact-me.js"
-    ],
     "/my-experience": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/my-experience.js"
     ],
-    "/my-projects": [
+    "/my-skills": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/my-projects.js"
+      "static/chunks/pages/my-skills.js"
     ]
   },
   "ampFirstPages": []
