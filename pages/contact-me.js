@@ -3,6 +3,7 @@ import { Container, Col } from 'react-bootstrap';
 import ContactForm from "../components/ContactForm";
 import PageHeader from "../components/PageHeader";
 import SocialIcons from "../components/SocialIcons";
+import database from '../firebase/firebase';
 
 const pageTitle = {
     firstWord: "Contact",

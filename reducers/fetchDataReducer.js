@@ -129,7 +129,8 @@ const githubRepoInitialState = {
   endNav: {},
   expensify: {},
   portfolio: {},
-  hooks: {}
+  hooks: {},
+  next: {}
 };
 
 const githubDataReducer = (state = githubRepoInitialState, action) => {
@@ -163,6 +164,7 @@ const projectsInitialState = {
   portfolioThumbnail: '',
   expensifyThumbnail: '',
   newFeaturesThumbnail: '',
+  nextPortfolioThumbnail: '',
   nonGithubProjects: []
 };
 

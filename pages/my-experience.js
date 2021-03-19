@@ -13,7 +13,7 @@ const pageTitle = {
 const { firstWord, secondWord } = pageTitle;
 
 const MyExepriencePage = (props) => {
-    const { loading, error, employment, riverIsland, riSummary, stellaDot, sdSummary, nap, napSummary, jet2, jet2Summary } = props;
+    const { loading, error, employment } = props;
 
     return (
         <Layout content={
@@ -57,26 +57,8 @@ export async function getStaticProps(context) {
                 });
             });
 
-            const [riverIsland, stellaDot, nap, jet2] = employment;
-
-            const riSummary = riverIsland.summary.reduce((total, amount) => {
-                return total.concat(amount);
-            }, []);
-
-            const sdSummary = stellaDot.summary.reduce((total, amount) => {
-                return total.concat(amount);
-            }, []);
-
-            const napSummary = nap.summary.reduce((total, amount) => {
-                return total.concat(amount);
-            }, []);
-
-            const jet2Summary = jet2.summary.reduce((total, amount) => {
-                return total.concat(amount);
-            }, []);
-
             return {
-                props: { employment, riverIsland, riSummary, stellaDot, sdSummary, nap, napSummary, jet2, jet2Summary }, // will be passed to the page component as props
+                props: { employment }, // will be passed to the page component as props
             };
 
         })

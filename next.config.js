@@ -25,5 +25,11 @@ module.exports = {
     },
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
-    }
+    },
+    rules: [
+        {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader", "postcss-loader"]
+        }
+    ]
 }

@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import { useState, useReducer } from "react";
 import { Form, Button } from 'react-bootstrap';
 import ReCAPTCHA from "react-google-recaptcha";
 import * as emailjs from 'emailjs-com';
@@ -105,19 +105,19 @@ const ContactForm = () => {
                     <Button variant="primary" type="submit" className="btn btn-primary">Send Message</Button>
                 </Form>
             ) : (
-                    <ReCAPTCHA
-                        sitekey="6Lfng2caAAAAAPH3mUIJVnJRqA7maIMWOdsTz0t2"
-                        onChange={sendEmail}
-                    />
-                )}
+                <ReCAPTCHA
+                    sitekey="6Lfng2caAAAAAPH3mUIJVnJRqA7maIMWOdsTz0t2"
+                    onChange={sendEmail}
+                />
+            )}
         </div>
 
     ) : (
-            <div>
-                <h3>{formSubmitted.title}</h3>
-                <p>{formSubmitted.paragraph}</p>
-            </div>
-        );
+        <div>
+            <h3>{formSubmitted.title}</h3>
+            <p>{formSubmitted.paragraph}</p>
+        </div>
+    );
 }
 
 export { ContactForm as default }

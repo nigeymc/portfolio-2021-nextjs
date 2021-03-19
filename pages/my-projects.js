@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import { Fragment } from 'react';
 import { Container, Col, Alert } from 'react-bootstrap';
 import PageHeader from "../components/PageHeader";
 import LoadingSpinner from "../components/LoadingSpinner";
@@ -15,7 +14,7 @@ const pageTitle = {
 const { firstWord, secondWord } = pageTitle;
 
 const MyProjectsPage = (props) => {
-    const { error, loading, portfolioThumbnail, expensifyThumbnail, newFeaturesThumbnail, nonGithubProjects } = props;
+    const { error, loading, portfolioThumbnail, expensifyThumbnail, newFeaturesThumbnail, portfolioNextThumbnail, nonGithubProjects } = props;
 
     return (
         <Layout content={
@@ -27,7 +26,7 @@ const MyProjectsPage = (props) => {
                             <h3>Code</h3>
                             <p>Some of my personal projects.</p>
                             <div className="cards">
-                                <GithubProjects portfolioThumbnail={portfolioThumbnail} expensifyThumbnail={expensifyThumbnail} newFeaturesThumbnail={newFeaturesThumbnail} />
+                                <GithubProjects portfolioThumbnail={portfolioThumbnail} portfolioNextThumbnail={portfolioNextThumbnail} expensifyThumbnail={expensifyThumbnail} newFeaturesThumbnail={newFeaturesThumbnail} />
                             </div>
                         </Col>
                         <Col className="mt-5">
@@ -62,10 +61,10 @@ export async function getStaticProps(context) {
             const data = snapshot.val();
             const githubProjects = data.githubProjects;
             const [githubThumbnails] = githubProjects;
-            const [portfolioThumbnail, expensifyThumbnail, newFeaturesThumbnail] = githubThumbnails.thumbnails
+            const [portfolioThumbnail, expensifyThumbnail, newFeaturesThumbnail, portfolioNextThumbnail] = githubThumbnails.thumbnails
             const nonGithubProjects = data.nonGithubProjects;
             return {
-                props: { portfolioThumbnail, expensifyThumbnail, newFeaturesThumbnail, nonGithubProjects }, // will be passed to the page component as props
+                props: { portfolioThumbnail, expensifyThumbnail, newFeaturesThumbnail, portfolioNextThumbnail, nonGithubProjects }, // will be passed to the page component as props
             };
         })
         .catch((e) => {
@@ -79,6 +78,7 @@ export async function getStaticProps(context) {
                 props: { loading: false }, // will be passed to the page component as props
             };
         }); // <-- complete loading
+
 }
 
 export { MyProjectsPage as default };

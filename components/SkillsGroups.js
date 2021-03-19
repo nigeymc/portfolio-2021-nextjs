@@ -1,6 +1,5 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import SkillsListGroup from "./SkillsListGroup";
-import LoadingSpinner from "./LoadingSpinner";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchData } from "../actions/fetchSkillsDataAction";
 

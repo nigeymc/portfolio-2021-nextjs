@@ -1,7 +1,16 @@
 {
+  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
+  "/about-me": "pages/about-me.html",
+  "/contact-me": "pages/contact-me.js",
+  "/": "pages/index.js",
   "/my-experience": "pages/my-experience.js",
-  "/my-skills": "pages/my-skills.js"
+  "/my-experience/jet2": "pages/my-experience/jet2.js",
+  "/my-experience/net-a-porter": "pages/my-experience/net-a-porter.js",
+  "/my-experience/river-island": "pages/my-experience/river-island.js",
+  "/my-experience/stella-and-dot": "pages/my-experience/stella-and-dot.js",
+  "/my-projects": "pages/my-projects.js",
+  "/my-skills": "pages/my-skills.js",
+  "/_error": "pages/_error.js"
 }

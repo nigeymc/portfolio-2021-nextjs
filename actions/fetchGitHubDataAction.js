@@ -37,9 +37,9 @@ export const fetchData = () => {
                     }
                 }, []);
 
-                const [, endNav, expensify, portfolio, , hooks] = filteredReposArr;
+                const [, endNav, expensify, portfolio, next, , hooks] = filteredReposArr;
 
-                dispatch(fetchDataSuccess({ filteredReposArr, endNav, expensify, portfolio, hooks }));
+                dispatch(fetchDataSuccess({ filteredReposArr, endNav, expensify, portfolio, next, hooks }));
             })
             .catch((e) => {
                 console.error('Error fetching data', e);

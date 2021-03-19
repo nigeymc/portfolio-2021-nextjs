@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProfilePic = () => (
     <div>
         <span className="d-block d-lg-none"><img src="/images/nmk.svg" width="50" /></span>

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Card, Modal, Button } from 'react-bootstrap';
 
 const ProjectCard = (props) => {

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { Alert } from 'react-bootstrap';
 import LoadingSpinner from "./LoadingSpinner";
 import ProjectCard from "./ProjectCard";
@@ -14,13 +14,15 @@ const GithubProjects = (props) => {
         loading,
         expensify,
         portfolio,
-        hooks
+        hooks,
+        next
     } = useSelector(state => state.githubData);
 
     useEffect(() => {
         dispatch(fetchData());
     }, [dispatch]);
 
+    console.log(expensify);
     return (
         <Fragment>
             {
@@ -30,12 +32,13 @@ const GithubProjects = (props) => {
                 loading ? (
                     <LoadingSpinner />
                 ) : (
-                        <Fragment>
-                            <ProjectCard thumbnail={props.portfolioThumbnail} title={portfolio.name} description={portfolio.description} pageUrl={portfolio.url} />
-                            <ProjectCard thumbnail={props.expensifyThumbnail} title={expensify.name} description={expensify.description} pageUrl={expensify.url} />
-                            <ProjectCard thumbnail={props.newFeaturesThumbnail} title={hooks.name} description={hooks.description} pageUrl={hooks.url} />
-                        </Fragment>
-                    )
+                    <Fragment>
+                        <ProjectCard thumbnail={props.portfolioNextThumbnail} title={next.name} description={next.description} pageUrl={next.html_url} />
+                        <ProjectCard thumbnail={props.portfolioThumbnail} title={portfolio.name} description={portfolio.description} pageUrl={portfolio.html_url} />
+                        <ProjectCard thumbnail={props.expensifyThumbnail} title={expensify.name} description={expensify.description} pageUrl={expensify.html_url} websiteUrl={expensify.homepage} />
+                        <ProjectCard thumbnail={props.newFeaturesThumbnail} title={hooks.name} description={hooks.description} pageUrl={hooks.html_url} />
+                    </Fragment>
+                )
             }
         </Fragment>
     )

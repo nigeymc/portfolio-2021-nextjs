@@ -1,4 +1,4 @@
-@keyframes noise{
+@keyframes noise {
     0% {background-position-y: 0px;}
     100% {background-position-y: -420px;}
     }
@@ -14,10 +14,14 @@
     }
 
     section.general-section--not-found {
-        @extend section.general-section;
+        @extend section, .general-section;
         background-color: transparent !important;
         background-image: none !important;
         text-align: left !important;
+
+        .btn:not(:disabled):not(.disabled) {
+            width: max-content;
+        }
 
         h1 {
             -webkit-text-fill-color: $primaryWhite !important; /* Will override color (regardless of order) */
@@ -34,7 +38,7 @@
         }
     }
     
-    .glitch-text{
+    .glitch-text {
         position: relative;
         z-index: 2;
         opacity: .9;
@@ -44,7 +48,7 @@
     }
     
     /* JUST RANDOM VALUES HERE! */
-    @keyframes glitch{
+    @keyframes glitch {
         3%{text-shadow:7px 7px 0px $primaryGreen;}
         6%{text-shadow:-9px 4px 0px $secondary;transform:translate(4px,-10px) skewX(3240deg);}
         7%{text-shadow:3px -4px 0px $off-black;}
