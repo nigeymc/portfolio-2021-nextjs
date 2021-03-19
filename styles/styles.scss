@@ -1,5 +1,9 @@
 // Import variables
-@import "./variables/Variables.scss";
+@import "./variables/Colors.scss";
+@import "./variables/Typography.scss";
+@import "./variables/Spacing.scss";
+@import "./variables/Grid.scss";
+@import "./variables/Paths.scss";
 
 // Import Bootstrap
 @import "~bootstrap/scss/bootstrap";
