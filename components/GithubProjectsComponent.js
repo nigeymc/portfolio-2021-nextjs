@@ -3,7 +3,7 @@ import { Alert } from 'react-bootstrap';
 import LoadingSpinner from "./LoadingSpinner";
 import ProjectCard from "./ProjectCard";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchData } from "../actions/fetchGithubDataAction";
+import { fetchData } from "../actions/FetchGitHubDataAction";
 
 const GithubProjects = (props) => {
 
@@ -22,7 +22,6 @@ const GithubProjects = (props) => {
         dispatch(fetchData());
     }, [dispatch]);
 
-    console.log(expensify);
     return (
         <Fragment>
             {

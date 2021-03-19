@@ -1,7 +1,7 @@
 import { Fragment, useEffect } from 'react';
 import SkillsListGroup from "./SkillsListGroup";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchData } from "../actions/fetchSkillsDataAction";
+import { fetchData } from "../actions/FetchSkillsDataAction";
 
 const SkillsGroups = () => {
 

@@ -1,73 +1,5 @@
 import { combineReducers } from 'redux';
 
-const homepageInitialState = {
-  error: null,
-  firstName: null,
-  lastName: null,
-  jobTitle: null,
-  city: null,
-  linkedIn: null,
-  gitHub: null
-};
-
-const homepageReducer = (state = homepageInitialState, action) => {
-  switch (action.type) {
-    case "FETCH_DATA_SUCCESS":
-      return {
-        ...state,
-        ...action.payload, // ...{ firstName, lastName }
-      };
-
-    case "FETCH_DATA_FAILURE":
-      return {
-        ...state,
-        error: true,
-      };
-
-    default:
-      return state;
-  }
-};
-
-const myExperiencePageInitialState = {
-  error: null,
-  employment: [],
-  riverIsland: [],
-  riSummary: [],
-  stellaDot: [],
-  sdSummary: [],
-  nap: [],
-  napSummary: [],
-  jet2: [],
-  jet2Summary: [],
-};
-
-const myExperiencePageReducer = (state = myExperiencePageInitialState, action) => {
-  switch (action.type) {
-    case "FETCH_DATA_LOADING":
-      return {
-        ...state,
-        error: null,
-        loading: action.payload,
-      };
-
-    case "FETCH_DATA_SUCCESS":
-      return {
-        ...state,
-        ...action.payload, // employmentData
-      };
-
-    case "FETCH_DATA_FAILURE":
-      return {
-        ...state,
-        error: true,
-      };
-
-    default:
-      return state;
-  }
-};
-
 const skillsInitialState = {
   error: null,
   university: [],
@@ -159,45 +91,7 @@ const githubDataReducer = (state = githubRepoInitialState, action) => {
   }
 };
 
-const projectsInitialState = {
-  error: null,
-  portfolioThumbnail: '',
-  expensifyThumbnail: '',
-  newFeaturesThumbnail: '',
-  nextPortfolioThumbnail: '',
-  nonGithubProjects: []
-};
-
-const projectsDataReducer = (state = projectsInitialState, action) => {
-  switch (action.type) {
-    case "FETCH_DATA_LOADING":
-      return {
-        ...state,
-        error: null,
-        loading: action.payload,
-      };
-
-    case "FETCH_DATA_SUCCESS":
-      return {
-        ...state,
-        ...action.payload,
-      };
-
-    case "FETCH_DATA_FAILURE":
-      return {
-        ...state,
-        error: true,
-      };
-
-    default:
-      return state;
-  }
-};
-
 export const reducers = combineReducers({
-  homepage: homepageReducer,
-  experiencePage: myExperiencePageReducer,
   skillsPage: skillsReducer,
-  githubData: githubDataReducer,
-  projectsData: projectsDataReducer
+  githubData: githubDataReducer
 });
