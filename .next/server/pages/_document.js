@@ -161,7 +161,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
           content: "index, follow"
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("script", {
           src: "https://use.fontawesome.com/releases/v5.13.0/js/all.js",
-          crossorigin: "anonymous"
+          crossOrigin: "anonymous"
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("link", {
           href: "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700",
           rel: "stylesheet",
