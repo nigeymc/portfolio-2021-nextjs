@@ -1,5 +1,5 @@
 // Import variables
-@import "./Variables.scss";
+@import "./variables/Variables.scss";
 
 // Import Bootstrap
 @import "~bootstrap/scss/bootstrap";
@@ -23,8 +23,3 @@
 @import "./sections/Homepage-section.scss";
 @import "./sections/General-section.scss";
 
-$body-color: $primaryGreen;
-
-body {
-  color: $body-color;
-}
