@@ -16,6 +16,6 @@ module.exports = {
         return config
     },
     sassOptions: {
-        includePaths: [path.resolve(__dirname, 'node_modules')],
+        includePaths: [path.join(__dirname, 'styles')],
     }
 }
