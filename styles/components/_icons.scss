@@ -1,9 +1,5 @@
 // Import variables
-@import "./variables/Colors";
-@import "./variables/Typography";
-@import "./variables/Spacing";
-@import "./variables/Grid";
-@import "./variables/Paths";
+@import "../variables/Colors";
 
 // Styling for the rounded social media links
 
@@ -19,7 +15,7 @@
         justify-content: center;
         height: 3.5rem;
         width: 3.5rem;
-        background-color: $white;
+        background-color: $primaryWhite;
         color: $primary;
         border-radius: 100%;
         font-size: 1.5rem;
@@ -29,7 +25,7 @@
         }
         &:hover {
             background-color: $primary;
-            color: $white;
+            color: $primaryWhite;
         }
     }
 }

@@ -1,3 +1,6 @@
+@import "./variables/Spacing";
+@import "./variables/Colors";
+@import "~bootstrap/scss/bootstrap";
 // Global styling for this template
 
 body {
@@ -39,31 +42,6 @@ p.lead {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.5rem;
-}
-
-sup {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 1.3rem;
-    width: 1.3rem;
-    @include media-breakpoint-up(md) {
-      height: 1.5rem;
-      width: 1.5rem;
-      font-size: 1rem;
-    }
-    background-color: $white;
-    color: $primary;
-    border-radius: 100%;
-    font-size: 0.9rem;
-    margin-right: 0.5rem;
-    right: -15px;
-    top: 0.3rem;
-
-    &:hover {
-        background-color: $primary;
-        color: $white;
-    }
 }
 
 .alert__error--fetch {

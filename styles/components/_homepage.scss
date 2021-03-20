@@ -1,9 +1,6 @@
 // Import variables
+@import "~bootstrap/scss/bootstrap";
 @import "./variables/Colors";
-@import "./variables/Typography";
-@import "./variables/Spacing";
-@import "./variables/Grid";
-@import "./variables/Paths";
 
 #homepage {
     background: url(/images/neon-sky-bg.jpg) no-repeat center top;
@@ -49,5 +46,30 @@
         justify-content: left;
       }
     }
+
+    sup {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 1.3rem;
+      width: 1.3rem;
+      @include media-breakpoint-up(md) {
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 1rem;
+      }
+      background-color: $white;
+      color: $primary;
+      border-radius: 100%;
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+      right: -15px;
+      top: 0.3rem;
+  
+      &:hover {
+          background-color: $primary;
+          color: $white;
+      }
+  }
     
 }

@@ -21,7 +21,7 @@
     }
 
     section.general-section--not-found {
-        @extend section, .general-section;
+        @extend .general-section !optional;
         background-color: transparent !important;
         background-image: none !important;
         text-align: left !important;
