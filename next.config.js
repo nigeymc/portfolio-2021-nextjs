@@ -17,5 +17,18 @@ module.exports = {
     },
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
+        prependData: `
+        $grey-800: #343a40;
+        $off-black: #262626;
+        $primaryGreen: #0C3333;
+        $secondaryGreen: #008C8E;
+        $primaryWhite: #fff;
+        $off-white: #F7F7F7;
+        $lightGrey: #6c757d;
+        $primary: $primaryGreen;
+        $secondary: $secondaryGreen;   
+        $yiq-contrasted-threshold: 205; 
+        `,
+
     }
 }
