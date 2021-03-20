@@ -1,16 +1,3 @@
-// Import variables
-@import "./variables/Colors";
-@import "./variables/Typography";
-@import "./variables/Spacing";
-@import "./variables/Grid";
-@import "./variables/Paths";
-
-// Import Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
-// Global CSS
-@import "./Global.scss";
-
 // Components
 @import "./components/Sidenav.scss";
 @import "./components/Homepage.scss";
@@ -22,8 +9,3 @@
 @import "./components/ProjectCard.scss";
 @import "./components/ContactMePage.scss";
 @import "./components/404Page.scss";
-
-// Sections
-@import "./sections/Homepage-section.scss";
-@import "./sections/General-section.scss";
-
