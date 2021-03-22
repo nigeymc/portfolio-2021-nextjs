@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'normalize.css/normalize.css';
 import '../styles/Global.scss';
 import { Provider } from 'react-redux';
 import { useStore } from '../store/configureStore';
