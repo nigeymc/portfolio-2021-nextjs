@@ -17,7 +17,7 @@ module.exports = {
     },
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
-        prependData: `@import "./variables/variables.scss";`,
+        prependData: `@import "./variables/_variables.scss";`,
     },
 }
 

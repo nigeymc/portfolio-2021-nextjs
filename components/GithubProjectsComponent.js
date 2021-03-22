@@ -33,7 +33,7 @@ const GithubProjects = (props) => {
                 ) : (
                     <Fragment>
                         <ProjectCard thumbnail={props.portfolioNextThumbnail} title={next.name} description={next.description} pageUrl={next.html_url} />
-                        <ProjectCard thumbnail={props.portfolioThumbnail} title={portfolio.name} description={portfolio.description} pageUrl={portfolio.html_url} />
+                        <ProjectCard thumbnail={props.portfolioThumbnail} title={portfolio.name} description={portfolio.description} pageUrl={portfolio.html_url} websiteUrl={portfolio.homepage} />
                         <ProjectCard thumbnail={props.expensifyThumbnail} title={expensify.name} description={expensify.description} pageUrl={expensify.html_url} websiteUrl={expensify.homepage} />
                         <ProjectCard thumbnail={props.newFeaturesThumbnail} title={hooks.name} description={hooks.description} pageUrl={hooks.html_url} />
                     </Fragment>
