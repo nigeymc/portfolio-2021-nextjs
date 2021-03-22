@@ -15,3 +15,4 @@ const MyApp = ({ Component, pageProps }) => {
     )
 }
 
+export { MyApp as default };
