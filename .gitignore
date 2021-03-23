@@ -4,3 +4,4 @@ public/dist/
 .env.development
 .env.local
 .next/
+.vercel

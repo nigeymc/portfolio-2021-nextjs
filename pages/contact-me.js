@@ -27,7 +27,7 @@ const ContactMePage = (props) => {
                     <div className="general-section__content--columns">
                         <Col md={8} lg={10}>
                             <div>
-                                <p>Drop me line, or feel free to get social with me.</p>
+                                <p>Drop me a line, or feel free to get social with me.</p>
                                 <ContactForm />
                             </div>
                         </Col>
