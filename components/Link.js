@@ -6,7 +6,7 @@ const NavLink = ({ href, children }) => {
     const router = useRouter();
 
     let className = children.props.className || '';
-    const pathnameParts = router.pathname.split('/');
+    const pathnameParts = router.pathname && router.pathname.split('/');
 
     if (router.pathname === href || `/${pathnameParts[1]}` === href) {
         className = `active ${className}`

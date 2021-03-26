@@ -37,7 +37,9 @@ export const fetchData = () => {
                     }
                 }, []);
 
-                const [, endNav, expensify, portfolio, next, , hooks] = filteredReposArr;
+                console.log(filteredReposArr);
+
+                const [, , endNav, expensify, portfolio, next, , hooks] = filteredReposArr;
 
                 dispatch(fetchDataSuccess({ filteredReposArr, endNav, expensify, portfolio, next, hooks }));
             })
