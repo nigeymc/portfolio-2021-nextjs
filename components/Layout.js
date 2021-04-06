@@ -30,7 +30,7 @@ const Layout = (props) => {
                             <li className="nav-item"><NavLink href="/my-projects"><a className="nav-link">My Projects</a></NavLink></li>
                             <li className="nav-item"><NavLink href="/contact-me"><a className="nav-link">Contact Me</a></NavLink></li>
                         </ul>
-                        <footer><img src="/images/nmk.svg" /> <span>.dev <span className="copyright">&copy;</span> {new Date().getFullYear()}</span></footer>
+                        <footer><img src="/images/nmk.svg" width="30" height="17" /> <span>.dev <span className="copyright">&copy;</span> {new Date().getFullYear()}</span></footer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
