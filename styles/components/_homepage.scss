@@ -1,8 +1,17 @@
-#homepage {
-    background: url(/images/neon-sky-bg.jpg) no-repeat center top;
+@mixin homepage-bg {
     background-size: cover;
     background-color: #0F1616;
     background-blend-mode: color-dodge;
+}
+
+#homepage {
+    background: url(/images/neon-sky-bgx1.jpg) no-repeat center top;
+    @include homepage-bg;
+
+    @include media-breakpoint-up(sm) {
+      background: url(/images/neon-sky-bg.jpg) no-repeat center top;
+      @include homepage-bg;
+    }
 
     .homepage-section__content {
       @include media-breakpoint-up(md) {
