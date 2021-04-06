@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <meta name="description"
-                        content="Personal portfolio website of London based Front End Engineer and designer Niall McKenna." />
+                        content="The personal website of London based Front End Engineer and designer Niall McKenna.I design and build websites and web applications using Javascript, ReactJS and HTML." />
                     <meta name="Keywords"
                         content="front end, engineer, developer, designer, web designer, web developer, javascript, reactJS, html, css, sass, coder" />
                     <meta name="author" content="Niall McKenna" />
