@@ -1,9 +1,9 @@
 // import * as firebase from 'firebase';
 import firebase from 'firebase/app'
-import 'firebase/appCheck'
 
 import 'firebase/auth'
 import 'firebase/database'
+import 'firebase/appCheck'
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -21,7 +21,7 @@ if (!firebase.apps.length) {
   // Pass your reCAPTCHA v3 site key (public key) to activate(). Make sure this
   // key is the counterpart to the secret key you set in the Firebase console.
   appCheck.activate(
-    'abcdefghijklmnopqrstuvwxy-1234567890abcd',
+    '6LeTo8McAAAAAF9W3kXpiC-jSVdJg-ODUnIT5vI3',
 
     // Optional argument. If true, the SDK automatically refreshes App Check
     // tokens as needed.
