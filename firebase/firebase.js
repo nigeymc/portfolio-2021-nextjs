@@ -1,9 +1,9 @@
 // import * as firebase from 'firebase';
 import firebase from 'firebase/app'
+import { initializeAppCheck, ReCaptchaV3Provider } from ('firebase/app-check');
 
 import 'firebase/auth'
 import 'firebase/database'
-import 'firebase/app-check'
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
