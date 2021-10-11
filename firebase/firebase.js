@@ -3,6 +3,7 @@ import firebase from 'firebase/app'
 
 import 'firebase/auth'
 import 'firebase/database'
+import 'firebase/app-check'
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
