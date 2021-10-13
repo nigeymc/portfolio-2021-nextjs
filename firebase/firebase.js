@@ -3,6 +3,7 @@ import firebase from 'firebase/compat/app';
 
 import 'firebase/compat/auth'
 import 'firebase/compat/database'
+import 'firebase/compat/app-check'
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
